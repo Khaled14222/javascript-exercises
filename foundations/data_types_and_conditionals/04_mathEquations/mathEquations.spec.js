@@ -4,10 +4,10 @@ describe('math', () => {
   test('a is 0', () => {
     expect(a).toEqual(0);
   });
-  test.skip('b is 9', () => {
+  test('b is 9', () => {
     expect(b).toEqual(9);
   });
-  test.skip('c is 66', () => {
+  test('c is 66', () => {
     expect(c).toEqual(66);
   });
   test.skip('d is 1', () => {
