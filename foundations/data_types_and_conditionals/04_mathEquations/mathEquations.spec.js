@@ -10,13 +10,13 @@ describe('math', () => {
   test('c is 66', () => {
     expect(c).toEqual(66);
   });
-  test.skip('d is 1', () => {
+  test('d is 1', () => {
     expect(d).toEqual(1);
   });
-  test.skip('e is -8', () => {
+  test('e is -8', () => {
     expect(e).toEqual(-8);
   });
-  test.skip('f is 68', () => {
+  test('f is 68', () => {
     expect(f).toEqual(68);
   });
 });

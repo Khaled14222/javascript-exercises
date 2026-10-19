@@ -6,9 +6,12 @@
 
  The greeting should read: "Hello! My name is Carlos Stevenson and I am 18 years old."
 */
+let firstName = "Carlos";
+let lastName = "Stevenson";
+
 
 // Add your code right below, good luck!
-
+let greeting = `Hello! my name is ${firstName}`
 
 
 
