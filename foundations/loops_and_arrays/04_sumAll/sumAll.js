@@ -3,7 +3,10 @@ const sumAll = function(first, second) {
   for (var i = first; i <= second; i++) {
     numbers.push(i);
   }
-  return numbers;
+  let total = numbers.reduce((start, finish) => {
+    return start + finish;
+  })
+  return total;
 };
 
 // Do not edit below this line
