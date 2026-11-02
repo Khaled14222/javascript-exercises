@@ -1,6 +1,9 @@
 const sumAll = function(first, second) {
   let numbers = [];
-  if (first > second){
+  if (first < 0 || second < 0){
+    numbers = "ERROR"
+    return numbers;
+  } else if (first > second){
     for (var i = second; i <= first; i++) {
         numbers.push(i);
       }
@@ -8,7 +11,9 @@ const sumAll = function(first, second) {
     for (var i = first; i <= second; i++) {
       numbers.push(i);
     }
-  } else if (first <= 0 || second <= 0){
+  }  else if(first != NaN || second != NaN){
+    numbers = "ERROR"
+  } else if (!Number.isInteger(first) || !Number.isInteger(second)){
     numbers = "ERROR"
   }
 
@@ -21,3 +26,6 @@ const sumAll = function(first, second) {
 
 // Do not edit below this line
 module.exports = sumAll;
+
+
+
