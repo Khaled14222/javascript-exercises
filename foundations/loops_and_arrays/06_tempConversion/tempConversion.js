@@ -1,24 +1,24 @@
 const convertToCelsius = function(temperature) {
-  let c = 0
+  let c ;
+  let roundedC ;
   c = (temperature - 32)*5/9;
-  let roundedC = 0;
-  if(!Number.isInteger(c)){
+  if(c%1 != 0){
     roundedC = c.toFixed(1);
     return Number(roundedC);
   } else {
-    return Number(roundedC);
+    return c;
   }
 };
 
 const convertToFahrenheit = function(temperature) {
-  let f = 0
-  f =(temperature * 5/9)+32;
-  let roundedF = 0;
-  if(!Number.isInteger(f)){
+  let f ;
+  let roundedF ;
+  f = (temperature * 9/5) + 32;
+  if(f%1 != 0){
     roundedF = f.toFixed(1);
     return Number(roundedF);
   } else {
-    return Number(roundedF);
+    return f;
   }
 };
 
