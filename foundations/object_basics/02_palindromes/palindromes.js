@@ -1,5 +1,7 @@
 const palindromes = function (str) {
-  let char = str.split('');
+  let clean = str.replace(/[^a-zA-Z0-9]/g, "");
+  clean = clean.toLowerCase();
+  char = clean.split('');
   let RevChar = char.slice().reverse();
 
     for(let i = 0; i < char.length; i++){
