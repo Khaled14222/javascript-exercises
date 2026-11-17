@@ -11,7 +11,7 @@ const subtract = function(numOne, numTwo) {
 const sum = function(arr) {
   let total=0;
 	for(let num in arr){
-    total += num;
+    total += arr[num];
   }
   return total;
 };
