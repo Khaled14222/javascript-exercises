@@ -24,14 +24,17 @@ const multiply = function(arr) {
   return total;
 };
 
-const power = function(numOne, numTwo) {
-  let total = numOne + numTwo;
+const power = function(nOne, nTwo) {
+  let total = nOne ** nTwo;
   return total;
 };
 
-const factorial = function(numOne, numTwo) {
-  let total = numOne + numTwo;
-  return total;
+const factorial = function(req) {
+  let results = 1;
+  for(i = 1; i <= req; i++){
+    results *= i;
+  }
+  return results;
 };
 
 // Do not edit below this line
