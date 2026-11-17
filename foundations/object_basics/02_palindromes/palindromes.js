@@ -2,12 +2,15 @@ const palindromes = function (str) {
   let char = str.split('');
   let RevChar = char.slice().reverse();
 
-  if(RevChar === char){
-    return true;
-  } else {
-    return false;
-  }
+    for(let i = 0; i < char.length; i++){
+      let Org = char[i];
+        if(char[i] !== RevChar[i]){
+          return false;
+        }
+    }
 
+    
+  return true;
   /*
   First split the word
   Then reversed it 
