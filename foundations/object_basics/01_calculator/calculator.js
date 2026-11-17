@@ -16,8 +16,11 @@ const sum = function(arr) {
   return total;
 };
 
-const multiply = function(numOne, numTwo) {
-	let total = numOne * numTwo;
+const multiply = function(arr) {
+  let total=1;
+	for(let num in arr){
+    total *= arr[num];
+  }
   return total;
 };
 
