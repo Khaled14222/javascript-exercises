@@ -1,6 +1,12 @@
 const findTheOldest = function(arr) {
+  let personAge ={
+    name:"",
+    age: 0,
+  }
   for(let key in arr){
-    arr[key].yearOfBirth-arr[key].yearOfDeath;
+    personAge.name = arr[key].name;  
+    personAge.age = arr[key].yearOfDeath-arr[key].yearOfBirth,
+    console.log(personAge);
   }
 };
 
